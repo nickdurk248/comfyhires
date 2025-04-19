@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Netflix's viewer program and get paid to watch your favorite shows. Limited spots available!">
+    <meta property="og:title" content="Get Paid to Watch Netflix">
+    <meta property="og:description" content="Turn your screen time into income with Netflix's viewer program.">
+    <title>Join Netflix - Get Paid to Watch Shows</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: #141414;
+            color: #e5e5e5;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .header {
+            padding: 1.5rem;
+            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+            position: relative;
+        }
+
+        .netflix-logo {
+            height: 60px;
+            display: block;
+            margin: 0 auto;
+            transition: transform 0.3s;
+        }
+
+        .hero {
+            min-height: 100vh;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+        }
+
+        .content {
+            transform: translateX(-50px);
+            opacity: 0;
+            animation: slideIn 0.8s forwards;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 3.5rem);
+            margin-bottom: 1.5rem;
+            color: #fff;
+            line-height: 1.2;
+            animation-delay: 0.2s;
+        }
+
+        .subheading {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            color: #e5e5e5;
+            animation-delay: 0.4s;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #E50914;
+            color: white;
+            padding: 1.2rem 2.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.3s, background 0.3s;
+            animation-delay: 0.6s;
+            font-size: 1.1rem;
+        }
+
+        .cta-button:hover {
+            background: #B20710;
+            transform: scale(1.05);
+        }
+
+        .secondary-cta {
+            margin-top: 1.5rem;
+            opacity: 0;
+            animation: fadeIn 0.8s 1s forwards;
+            color: #a3a3a3;
+            font-weight: 600;
+        }
+
+        .steps-section {
+            padding: 3rem 2rem;
+            background: #1a1a1a;
+        }
+
+        .steps-grid {
+            display: grid;
+            gap: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .step-card {
+            opacity: 0;
+            transform: translateY(20px);
+            padding: 1.5rem;
+            background: #2a2a2a;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .step-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            animation: cardAppear 0.6s forwards;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: #E50914;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes slideIn {
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        @keyframes cardAppear {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            color: #fff;
+        }
+
+        @media (min-width: 768px) {
+            .hero { padding: 2rem 4rem; }
+            .steps-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix" class="netflix-logo">
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="content">
+                <h1>Get Paid to Watch Netflix</h1>
+                <p class="subheading">Turn your screen time into income — apply now to start reviewing shows and movies.</p>
+                <a href="https://glstrck.com/aff_c?offer_id=1925&aff_id=26967" target="_blank" class="cta-button">Start Reviewing Now</a>
+                <p class="secondary-cta">Limited spots available – don’t miss out!</p>
+            </div>
+        </section>
+
+        <section class="steps-section">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-grid">
+                <article class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Create Account</h3>
+                    <p>Visit our application portal and sign up with your email</p>
+                </article>
+                <article class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Complete Profile</h3>
+                    <p>Tell us about your viewing preferences and experience</p>
+                </article>
+                <article class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Start Reviewing</h3>
+                    <p>Begin watching and earn for each quality review submitted</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Hero animations
+            const heroElements = document.querySelectorAll('.content > *');
+            heroElements.forEach((el, index) => {
+                el.style.animationDelay = `${index * 0.2}s`;
+            });
+
+            // Step cards animation
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            document.querySelectorAll('.step-card').forEach((card, index) => {
+                card.style.transitionDelay = `${index * 0.2}s`;
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
