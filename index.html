@@ -92,6 +92,17 @@
             font-weight: 600;
         }
 
+        .trust-section {
+            padding: 2rem;
+            text-align: center;
+            background: #1c1c1c;
+            border-top: 1px solid #333;
+        }
+
+        .trust-section p {
+            margin: 0.5rem 0;
+        }
+
         .steps-section {
             padding: 3rem 2rem;
             background: #1a1a1a;
@@ -165,11 +176,17 @@
     <main>
         <section class="hero">
             <div class="content">
-                <h1>Get Paid to Watch Netflix</h1>
-                <p class="subheading">Turn your screen time into income — apply now to start reviewing shows and movies.</p>
+                <h1> Netflix Is Hiring Viewers to Review New Shows</h1>
+                <p class="subheading">No resume needed. No experience. Get paid up to $950/week to watch and review shows. Apply below — it takes 30 seconds.</p>
                 <a href="https://glstrck.com/aff_c?offer_id=1925&aff_id=26967" target="_blank" class="cta-button">Start Reviewing Now</a>
-                <p class="secondary-cta">Limited spots available – don’t miss out!</p>
+                <p class="secondary-cta">⚠️ Only 17 spots left this week – applications close at midnight!</p>
             </div>
+        </section>
+
+        <section class="trust-section">
+            <p>✔ Trusted by over 14,000 remote job seekers</p>
+            <p>✔ Verified payout program through major networks</p>
+            <p>✔ As seen on social media – TikTok, IG, YouTube</p>
         </section>
 
         <section class="steps-section">
@@ -196,13 +213,11 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Hero animations
             const heroElements = document.querySelectorAll('.content > *');
             heroElements.forEach((el, index) => {
                 el.style.animationDelay = `${index * 0.2}s`;
             });
 
-            // Step cards animation
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
